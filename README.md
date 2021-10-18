@@ -49,6 +49,7 @@ BATCH_SIZE=100				#The batch size
 EPOCHS=100					#The epochs during training process
 
 save_model_path=""			#The path to store the model. Can be None.
+
 load_model_path=""			#The path to load existing weights. 
 							#If be None, then train the model from beginning
 
