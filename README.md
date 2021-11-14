@@ -27,7 +27,6 @@ The code should run on Jupyter Notebook  and the result can clearly display. The
 #"mean_squared_error"-"MSE"  
 #"mean_absolute_error"-"MAE"
 #"mean_absolute_percentage_error"-"MAPE"
-#"mean_squared_logarithmic_error" - "MAPE"
 # more in "https://keras.io/zh/losses/"
 LOSS = 'MSE' 				
 
