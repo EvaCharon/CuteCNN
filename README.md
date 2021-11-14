@@ -26,7 +26,8 @@ The code should run on Jupyter Notebook  and the result can clearly display. The
 #Loss function.
 #"mean_squared_error"-"MSE"  
 #"mean_absolute_error"-"MAE"
-#"mean_absolute_percentage_error"-"MAPE"					#"mean_squared_logarithmic_error" - "MAPE"
+#"mean_absolute_percentage_error"-"MAPE"
+#"mean_squared_logarithmic_error" - "MAPE"
 # more in "https://keras.io/zh/losses/"
 LOSS = 'MSE' 				
 
@@ -58,13 +59,23 @@ img_path=""
 
 After setting these parameters, merely run the main method and you will get the results.
 
+---
+
+### Comparing the performance when tuning the super parameter
+
+![](https://github.com/EvaCharon/CuteCNN/blob/master/Picture/Readme/activate.jpg)
+
+epochs = 100 and batch_size=100:
+
+As shown in the picture above, when using the different activation function Sigmoid brings about the best accuracy after 100 epochs. As the three methods didn't perform badly different from each other, we can tell that the cuteCNN met its bottleneck during training. When the relu function got the lowest train loss but  performed worst, it shows that the model may fall into over fitting. 
+
+ ![](https://github.com/EvaCharon/CuteCNN/blob/master/Picture/Readme/optimizer.jpg)
 
 
 
+epochs = 100 and batch_size=100, using MSE and Relu
 
-
-
-
+When choosing different optimizer, the outcomes differs a lot. The training uses the default parameters of the optimizer, like learning rate. The results shows that model didn't work under the SGD and Adagrad, whose loss reduce too slowly to fit. Maybe it would be better if different learning rate was chosen.
 
 
 
