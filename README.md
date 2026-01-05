@@ -2,6 +2,26 @@
 
 This repository presents a tiny convolution neural network to accomplish the assignments of Artificial Intelligence Security 2021-FALL. The CuteCNN is trainable and can be evaluated on CIFAR10. The Super Parameters are set up artificially when running the code so that you can compare the  outcomes under  different conditions.
 
+## DCGAN (GAN for CIFAR-10)
+
+This repo also includes a minimal **DCGAN** implementation for CIFAR-10: `cute_gan.py`.
+
+#### install
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+#### train
+
+```bash
+python3 cute_gan.py --epochs 50 --batch-size 128
+```
+
+It will:
+- save sample image grids to `outputs/epoch_XXXX.png`
+- save checkpoints to `checkpoints/`
+
 ## CIFAR10
 
 The CIFAR-10 dataset consists of 60000 32x32 color images in 10  classes, with 6000 images per class. There are 50000 training images and 10000 test images. The 10 classes are __Airplane__, __Automobile__, __Bird__, __Cat__, __Deer__, __Dog__, __Frog__, __Horse__,  __Ship__, __Truck__, as shown in the figure below.
